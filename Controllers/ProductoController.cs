@@ -58,6 +58,8 @@ namespace ApiProducto.Controllers
 
 
         //HttpPut
+
+
         [HttpPut("{id}")] 
         public async Task <ActionResult>PutProducto(int id, Producto producto) 
           {
@@ -67,6 +69,8 @@ namespace ApiProducto.Controllers
             {
              return NotFound();
             }
+
+
 
            productoEdit.Nombre = producto.Nombre;
            productoEdit.Descripcion= producto.Descripcion;
